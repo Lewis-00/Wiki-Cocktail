@@ -1,13 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import WikiDrinkHomeContainer from './components/WikiDrinkHomeContainer'
 
 const App = () => {
-  return (
-    <div>
-      wiki drink
-    </div>
-  );
+    return (
+        <>
+            <WikiDrinkHomeContainer />
+        </>
+    )
 }
 
-export default App;
+export default App
