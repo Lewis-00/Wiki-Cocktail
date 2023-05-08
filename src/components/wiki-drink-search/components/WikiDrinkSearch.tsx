@@ -21,7 +21,7 @@ const WikiDrinkSearch = (props: IWikiDrinkSearchProps) => {
        fetchDrinkInfo().then((res) => {
            setDrinkInfo(res)
        })
-   }, [fetchDrinkInfo])
+   }, [])
 
     const handleSearchButton = () => {
         fetchDrinkInfo(drinkName).then((res) => {
@@ -39,7 +39,7 @@ const WikiDrinkSearch = (props: IWikiDrinkSearchProps) => {
 
                 <button className="btn btn-lg btn-outline-secondary ms-2"
                         onClick={handleSearchButton}
-                >Search
+                >{!!drinkName ? 'Cerca' : 'Random'}
                 </button>
             </div>
 
